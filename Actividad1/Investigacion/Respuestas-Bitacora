@@ -4,7 +4,8 @@ Notas.
 que hace el registro A: El registro A tiene distintas funcionas. 1: almacenauna constante. 2: Selecciona una direccion RAM.
  3: Selecciona una direccion ROM
 
- M es lo que contiene el registro A en ese momento
+ M es lo que contiene el registro A en ese momento en la RAM
+ 
 
 Trabajo de investigacion
 ¿Qué es un computador digital moderno?
