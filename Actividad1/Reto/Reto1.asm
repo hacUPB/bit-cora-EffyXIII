@@ -57,3 +57,9 @@ D=D+A
 M=D
 
 //6. Si el valor almacenado en D es igual a 0 salta a la posición 100 de la ROM.
+
+D=0 //Reiniciamos el valor de D por su uso en el punto anterior
+@100
+D;JEQ
+@40
+0;JMP
