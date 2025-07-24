@@ -61,5 +61,3 @@ M=D
 D=0 //Reiniciamos el valor de D por su uso en el punto anterior
 @100
 D;JEQ
-@40
-0;JMP
