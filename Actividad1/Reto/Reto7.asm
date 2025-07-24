@@ -21,3 +21,9 @@ D;JGT
     //- En qué posición de la memoria está `var1`, `var2` y `var3`? ¿Por qué en esas posiciones?
     //R/16, 17 y 18 porque las direcciones 0–15 están reservadas para registros predefinidos
 
+//14. Implementa en ensamblador:
+//R4 = RAM[R1]
+@1
+D=M
+@4
+M=D
