@@ -36,4 +36,9 @@ M=D
 //    3. ¿Qué hace esto `var2 = *pvar`?
 //    4. ¿Qué hace esto `pvar = &var3`?
 
-//R)
+//R) 1. declara una variable tipo puntero
+//R) 2. En un principio, es incompatible ya que var no es un puntero, suponiendo que si lo es
+//      esta instrucción asigna la dirección almacenada en var al puntero pvar
+//R) 3. Esta expresión desreferencia el puntero pvar, obteniendo el entero que está en la dirección que apunta, y lo asigna a var2.
+//R) 4. Hace que pvar apunte a la dirección de var3 (variable int)
+ 
