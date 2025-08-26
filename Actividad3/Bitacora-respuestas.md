@@ -27,6 +27,10 @@ en la funcion set up podemos ver una linea que corresponde al fondo y una que as
 la funcion update no posee ninguna linea de codigo, asi que presumiblemente no hace nada y la funcion draw se encarga de hacer aparecer un circulo tras verificar el color de particleColor
 luego tenemos la funcion mouseMoved, la cual asiga un valor a las variables [x] y [y] basadas en la posicion del mouse, luego revisa el numero de esferas totales en patalla, si este es mayor que 100, borra el primer circulo manteniendo limitado el numero de circulos en pantalla
 
+Actividad #4
+
+era ver videos :P
+
 Actividad #5
 
 R/es una variable que almacena la dirección de memoria de otra variable. Es decir, en lugar de guardar directamente un valor (como un número o una letra), un puntero guarda la ubicación donde ese valor se encuentra en la memoria. esta ubicado dentro de ofApp 
@@ -38,3 +42,13 @@ y mantiene guardada las caracteristicas de cada circulo creada para modificarlas
 Actividad #6
 
 al clickear y mover un circulo este se queda aderido al mouse y no hay forma de soltarlo, habria que crear una funcion extra que se enfoque en detectar cuando el click del mouse se deja de oprimir y que deje el circulo en esas cordenadas x,y
+
+Actividad #7
+
+al iniciar el programa solo podemos ver una pantalla en negro, si apretamos la letra c aparecera el siguiente mensaje
+
+![alt text](<Captura de pantalla 2025-08-26 090656.png>)
+
+en el cual vemos que se guarda la posicion en la cual el mouse estaba al momento de apretar el boton.
+
+al modificar nuevamente el codigo, agregando arreglos en la funcion createObjectInStack, descubrimos que no guarda las cordenadas del mouse si no que realmente, selecciona unas coordenadas aleatorias para, ahora modificado, crear un circulo en esa posicion. y nos ayuda a entender porque anteriormente no aparecia el circulo, eso se debia que estaba declarado como una variable local, al hacer esto, cuando pasabamos a la funcion draw, la variable se destruia, por tanrto no habia informacion para construir el circulo
