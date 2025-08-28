@@ -301,3 +301,5 @@ El heap aloja dinámicamente las posiciones y colores de las esferas, ajustándo
 
 La GPU gestiona el renderizado de las geometrías 3D.
 Esto asegura que el programa sea estable incluso al recalcular repetidamente la cuadrícula.
+
+<video controls src="2025-08-28 00-37-47.mp4" title="Title"></video>
