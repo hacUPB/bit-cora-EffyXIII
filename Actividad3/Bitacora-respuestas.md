@@ -245,3 +245,59 @@ public:
 
 
 };
+
+
+Sobre la memoria:
+
+1. Memoria en la que residen los datos
+
+La aplicación utiliza diferentes tipos de memoria en tiempo de ejecución:
+
+Stack (pila):
+
+Variables locales dentro de funciones (x, y, z, intersectionPoint, etc.).
+
+Se crean y destruyen automáticamente cada vez que se ejecutan funciones como generateSpheres(), draw() o mousePressed().
+
+Uso temporal, rápido y limitado en tamaño.
+
+Heap (montículo):
+
+Los std::vector<glm::vec3> spherePositions y std::vector<ofColor> sphereColors almacenan dinámicamente todas las posiciones y colores de las esferas.
+
+Al crecer o reducir la cuadrícula (cuando el usuario modifica xStep, yStep, amplitud, etc.), el vector asigna o libera memoria en el heap automáticamente.
+
+El tamaño depende de la cantidad de esferas generadas.
+
+- Segmento de datos (memoria estática):
+
+Variables globales o estáticas, aunque en este caso no usamos globales directas.
+
+Los atributos de la clase ofApp (xStep, yStep, distDiv, amplitud, etc.) viven en esta zona mientras la aplicación se ejecuta.
+
+Memoria de video (GPU):
+
+El renderizado de las esferas con ofDrawSphere() utiliza buffers internos de OpenGL en la GPU.
+
+La geometría base (esfera) se genera y envía a la tarjeta gráfica cada vez que se dibuja el frame.
+
+Datos clave y su ubicación
+
+Posiciones de las esferas → spherePositions (heap).
+
+Colores de las esferas → sphereColors (heap).
+
+Parámetros de control (xStep, yStep, amplitud, distDiv) → atributos en la clase (ofApp), viven en memoria estática durante toda la ejecución.
+
+Selección de esfera → selectedIndex y sphereSelected (memoria estática en el objeto ofApp).
+
+Variables temporales en cálculos (ej. z al generar posiciones, vectores en el raycasting) → stack.
+
+La aplicación distribuye su memoria de forma eficiente:
+
+El stack maneja variables temporales.
+
+El heap aloja dinámicamente las posiciones y colores de las esferas, ajustándose a los parámetros del usuario.
+
+La GPU gestiona el renderizado de las geometrías 3D.
+Esto asegura que el programa sea estable incluso al recalcular repetidamente la cuadrícula.
