@@ -16,3 +16,7 @@ Preguntas
 ¿Los atributos de un objeto están contiguos? Sí, por lo general están contiguos y en orden, salvo que haya padding por alineación (más común con char, double, etc.).
 
 ¿Los métodos ocupan espacio en el objeto? No. Están definidos aparte. Todos los objetos comparten la misma implementación del método.
+
+Variables static no incrementan el tamaño de cada objeto, ya que no forman parte del objeto. Son globales para la clase.
+
+Variables dinámicas (punteros) sí afectan el tamaño del objeto, pero solo por el puntero. La memoria real que usan se encuentra fuera del objeto, en el heap.
