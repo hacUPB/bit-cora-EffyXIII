@@ -29,3 +29,5 @@ En este caso, podemos ver como el color se realiza en la cpu para posteriormente
 de igual manera que en el aterior ejemplo, tenemos una malla, pero esta vez no ondula, es completamente estatica, pero al pasar el mouse por encima se deforma formando una semiesfera, tambien dependiendo del posicionamiento del mouse, varia el color de la malla (variando de magenta a azul con el movimiento del eje x) en general, no es muy diferente al ejemplo anterior. podemos resaltar que el efecto borbuja se realiza moviendo el posicionamiento de los vertices en un rango al rededor del mouse segun vemos en el codigo
 
 ## Ejemplo 4
+
+Ahora agregamos un nuevo factor, texturas, la textura se desplaza con el movimieno del mouse, y la gpu se encarga de ponerla en el fragment  
