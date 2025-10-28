@@ -30,4 +30,19 @@ de igual manera que en el aterior ejemplo, tenemos una malla, pero esta vez no o
 
 ## Ejemplo 4
 
-Ahora agregamos un nuevo factor, texturas, la textura se desplaza con el movimieno del mouse, y la gpu se encarga de ponerla en el fragment  
+Ahora agregamos un nuevo factor, texturas, la textura se desplaza con el movimieno del mouse, y la gpu se encarga de ponerla en el fragment y con los vertices se ubica la posicion de a textura, una forma muy sencilla de generar una figura deseada con menos codigo 
+
+## Ejemplo 5
+
+Muy similar al ejemplo anterior, pues utilizamos la misma textura, pero ahora agregamos una mascara encima para tener una transparencia a nuestra eleccion 
+
+## Ejemplo 6
+
+Bueno, aqui ya suceden muchas cosas. 
+- primero tenemos una textura y una mascara generada en rgb
+- nos encontramos una nueva funcion <<movie.update();>> la cual nos permite ahora usar video en vez de imagen 
+- la mascara se mueve con el mouse en el eje x
+- se asocian por asi decirlo a un color de la mascara, una textura
+
+### Resultado
+obtenemos una pantalla que varia entre el color negro, la textura y el video segun el movimiento de nuestro mouse, pudiendo tener varios a la vez debido a la mascara rgb
