@@ -46,3 +46,24 @@ Bueno, aqui ya suceden muchas cosas.
 
 ### Resultado
 obtenemos una pantalla que varia entre el color negro, la textura y el video segun el movimiento de nuestro mouse, pudiendo tener varios a la vez debido a la mascara rgb
+
+## Ejemplo 7
+
+el mas complicado con diferencia ya que recolecta casi todo lo anterior en un solo programa con agregados extra
+
+- tenemos dos texturas enmascaradas por un patron constante y repititivo 
+- este patron forma las letras "O F"
+- Podemos controlar la opacidad (alpha) de la mascara para que tarde mas o menos repeticiones en llegar al 100%
+- podemos desactivar las texturas para ver el efecto en colores planos
+- podemos desactivar la opcion de pintar para que ahora borre el "OF" segun nuestra opacidad en cada repiticios 
+- reiniciams con el boton espacio 
+- Podemos pintar nosotros mismos donde queramos con el mouse y click
+
+#### Dato curioso
+
+descubri que al programa notar la interaccion del mouse, el patron base si vuelve erratico y empieza a tener notables desviaciones, posible caso de estudio para ver que interaccion tienen y como se podria solucionar
+
+
+## Ejemplo 9
+
+Casi identico al ejemplo 4, solo que en vez de desplazarse con el mouse, aplica un efecto de desenfoque gaussiano
